@@ -1,0 +1,26 @@
+{
+    "name": "psl",
+    "publisher": "Pema99",
+    "displayName": "Shaderception Language",
+    "description": "The shading language used for the Shaderception compiler in VRChat.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "shaderception",
+            "aliases": ["Shaderception Language", "shaderception"],
+            "extensions": [".psl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "shaderception",
+            "scopeName": "source.shaderception",
+            "path": "./syntaxes/shaderception.tmLanguage.json"
+        }]
+    }
+}
